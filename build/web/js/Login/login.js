@@ -22,6 +22,7 @@ function validateSignUp()
     var signUpForm = document.getElementById("RegisterForm");
 
     var result = validateUserData(signUpForm) && validate_email(signUpForm, "Email", "Email", true);
+    console.log(result);
     if (result)
     {
         var param = getFormData(signUpForm);
@@ -60,11 +61,12 @@ function validateSignIn()
         console.log(verificationStatus);
         if(verificationStatus === '1')
         {
-            window.open("login.fin?cmdAction=loadHome", "_self");
+            showNotyfCallback("User Authorized", "success", false, "", setTimeout(() => window.location = "login.fin?cmdAction=loadHome", TIME));
+//            window.open("login.fin?cmdAction=loadHome", "_self");
         }
         else
         {
-            showNotyf("UserName and Password is invalid", "error");
+            showNotyf("Invalid Username / Password", "error");
         }
     }
 }
@@ -73,7 +75,7 @@ function validateUserData(formName)
 {
     
     var result = validate_loginid(formName, 'UserName', 'User Name', true)
-            && validate_password(formName, 'Password', 'Password', true);
+            && password_validate(formName, 'Password', 'Password', true);
     return result;
 }
 
@@ -145,4 +147,15 @@ function validatePassword()
             enableElement('registerBtn');
         }
     }
+}
+
+function password_validate(frm,field_name,captionName,isCompulsory)
+{
+    var fieldvalue = frm.elements[field_name].value;
+    if(fieldvalue.trim() === "")
+    {
+        alert("Enter valid value for \'"+captionName+"\'.");
+        return false;
+    }
+    return true;
 }
