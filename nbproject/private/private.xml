@@ -4,7 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/datamanager/LoginDataManager.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/bean/LoginFormBean.java</file>
             <file>file:/home/njuser/NetBeansProjects/tms/web/js/Login/login.js</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Login/signIn.jsp</file>
             <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/datamanager/impl/LoginDataManagerImpl.java</file>
             <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Login/signUp.jsp</file>
             <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/service/LoginService.java</file>
