@@ -3,16 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/datamanager/LoginDataManager.java</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/bean/LoginFormBean.java</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/web/js/Login/login.js</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Login/signIn.jsp</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/datamanager/impl/LoginDataManagerImpl.java</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Login/signUp.jsp</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/service/LoginService.java</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Login/status.jsp</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/service/impl/LoginServiceImpl.java</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/login/controller/LoginController.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Template/template.jsp</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Template/addTemplate.jsp</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/js/Template/template.js</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Template/templateStatus.jsp</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/template/service/TemplateService.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/template/service/impl/TemplateServiceImpl.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/template/datamanager/TemplateDataManager.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/template/bean/TemplateFormBean.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/src/java/com/finlogic/tms/template/controller/TemplateController.java</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Template/editTemplate.jsp</file>
         </group>
     </open-files>
 </project-private>
