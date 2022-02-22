@@ -5,6 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<footer class="fixed-bottom text-muted bg-light shadow-sm p-3">
+<footer class="fixed-bottom text-muted bg-light shadow-sm p-1">
     <div class="container">Created by the NJCT Team · &copy;2022</div>
 </footer>

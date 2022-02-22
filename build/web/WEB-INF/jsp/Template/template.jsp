@@ -14,7 +14,7 @@
     </head>
     <body>
         <%@include file="../header.jsp" %>
-        <main class="container my-4">
+        <main class="container my-4 mb-5">
             <div id="breadcrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
