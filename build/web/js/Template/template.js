@@ -87,8 +87,9 @@ function deleteTemplate()
                     showNotyf("some problem arise", "error");
                 }
                 loadDeleteTemplate('Delete');
-            }
-    )
+            }         
+    );
+    loadEditor('txtBody');   
 }
 
 function loadTemplateType(value)
