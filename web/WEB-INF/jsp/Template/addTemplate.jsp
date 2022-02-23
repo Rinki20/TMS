@@ -64,6 +64,14 @@
                             <div class="col-md-9" id="cmbCategory" <c:if test="${Type ne 'LETTER'}">style="display:none;"</c:if>>
                                 <select class="form-select" id="categorysel" name="categorysel" <c:if test="${task eq 'Delete' || task eq 'View' || task eq 'Edit'}">disabled</c:if>>
                                 <c:choose>
+                                <c:when test="${Category eq 'WELCOMELETTER'}">
+                                    <option value="WELCOMELETTER" selected>Welcome Letter</option>
+                                    <option value="PARTIALCLOSURE">Partial Closure Letter</option>
+                                    <option value="FULLCLOSURE" >Full Closure Letter</option>
+                                    <option value="NOTES">Notes to accounts For Bulk Printing</option>
+                                    <option value="COVERLETTER">Covering letter for Bulk Printing</option>
+                                    <option value="CACERTIFICATE">CA Certificate for Bulk Printing</option>
+                                </c:when>                                    
                                 <c:when test="${Category eq 'FULLCLOSURE'}">
                                     <option value="WELCOMELETTER">Welcome Letter</option>
                                     <option value="PARTIALCLOSURE">Partial Closure Letter</option>
