@@ -26,7 +26,7 @@
 <script src="http://test.njindiainvest.com/finlibrary/resource/ajax.js"></script>
 
 <%--Validation--%>
-<script src="js/Login/validate.js"></script>
+<script src="http://test.njindiainvest.com/finlibrary/resource/validate.js"></script>
 
 <%-- Custom js --%>
 <script src="js/Remote/jquery.min.js"></script>
