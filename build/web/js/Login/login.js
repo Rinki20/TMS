@@ -61,7 +61,7 @@ function validateSignIn()
         console.log(verificationStatus);
         if(verificationStatus === '1')
         {
-            showNotyfCallback("User Authorized", "success", false, "", setTimeout(() => window.location = "login.fin?cmdAction=loadHome", TIME));
+            showNotyfCallback("User Authorized", "success", false, "", setTimeout(() => window.location = "home.fin?cmdAction=loadHome", TIME));
 //            window.open("login.fin?cmdAction=loadHome", "_self");
         }
         else
