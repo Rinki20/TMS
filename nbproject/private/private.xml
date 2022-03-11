@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/js/Template/template.js</file>
             <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/Category/addCategory.jsp</file>
-            <file>file:/home/njuser/NetBeansProjects/tms/web/js/Category/category.js</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/header.jsp</file>
+            <file>file:/home/njuser/NetBeansProjects/tms/web/WEB-INF/jsp/home.jsp</file>
         </group>
     </open-files>
 </project-private>
