@@ -15,6 +15,8 @@ import java.util.List;
  */
 public interface TemplateService {
     
+    public int TemplateCount() throws Exception;
+    public int DefaultCount() throws Exception;
     public int insertTemplateDetail(TemplateFormBean templateFormBean) throws Exception;
     public int updateTemplateDetail(TemplateFormBean templateFormBean) throws Exception;
     public int deleteTemplateDetail(TemplateFormBean templateFormBean) throws Exception;

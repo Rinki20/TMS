@@ -81,7 +81,7 @@ public class LoginController {
             int status = loginService.verifyUser(loginFormBean);
             modelAndView.addObject("status", status);
             modelAndView.addObject("Action", "verifyUser");
-
+            
             CommonMember.appendLogFile("@service :: verifyUser:- " + status);
 
             String Usercode = "", Type = "";
@@ -99,7 +99,10 @@ public class LoginController {
                     loginFormBean.setUserCode(Usercode);
                     loginFormBean.setUserType(Type);
                 }
-
+                int counthits = loginService.getLoginHitCount(loginFormBean);
+                CommonMember.appendLogFile("LoginController :: counthits : " + counthits);
+                loginService.updateHistory(loginFormBean, counthits);
+                
                 HttpSession session = request.getSession(true);
 
                 SessionBean sessionInfo = CommonUtil.getSessionBean(request);

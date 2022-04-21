@@ -14,17 +14,21 @@ import java.util.List;
  */
 public interface CategoryService {
 
+    public int CategoryCount() throws Exception;
+
+    public int DefaultCount() throws Exception;
+
     public List getTemplateType() throws Exception;
-    
+
     public List getCategoryNameList(CategoryFormBean categoryFormBean) throws Exception;
 
     public int insertCategoryDetail(CategoryFormBean categoryFormBean) throws Exception;
-    
-    public List getAllCategoryDetail(CategoryFormBean categoryFormBean) throws Exception ;
-    
+
+    public List getAllCategoryDetail(CategoryFormBean categoryFormBean) throws Exception;
+
     public List getCategoryData(CategoryFormBean categoryFormBean) throws Exception;
-    
+
     public int editCategoryDetail(CategoryFormBean categoryFormBean) throws Exception;
-    
+
     public int deleteCategoryDetail(CategoryFormBean categoryFormBean) throws Exception;
 }

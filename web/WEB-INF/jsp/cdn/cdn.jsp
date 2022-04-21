@@ -44,4 +44,6 @@
 <script src="js/TmpType/tmptype.js"></script>
 <script src="js/Placeholder/placeholder.js"></script>
 <script src="js/Template/ck-editor-inject.js"></script>
+<script src="js/UserMaster/usermaster.js"></script>
+<script src="js/HistoryMaster/historymaster.js"></script>
     

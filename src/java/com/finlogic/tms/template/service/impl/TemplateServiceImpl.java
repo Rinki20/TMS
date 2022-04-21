@@ -24,6 +24,16 @@ public class TemplateServiceImpl implements TemplateService {
     TemplateDataManager templateDatamanager;
 
     @Override
+    public int TemplateCount() throws Exception {
+        return templateDatamanager.TemplateCount();
+    }
+
+    @Override
+    public int DefaultCount() throws Exception {
+        return templateDatamanager.DefaultCount();
+    }
+    
+    @Override
     public int insertTemplateDetail(TemplateFormBean templateFormBean) throws Exception{
         TemplateEntityBean templateEntityBean = convertFormBeanToEntityBean(templateFormBean);
         return templateDatamanager.insertTemplateDetail(templateEntityBean);

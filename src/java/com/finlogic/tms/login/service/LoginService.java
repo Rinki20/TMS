@@ -15,7 +15,13 @@ import java.util.List;
 public interface LoginService {
     
     public int insertUserLoginDetail(LoginFormBean loginFormBean) throws Exception;
-   
+    
+    public int getLoginHitCount(LoginFormBean loginFormBean) throws Exception;
+
+    public int addToHistory(LoginFormBean loginFormBean) throws Exception;
+
+    public int updateHistory(LoginFormBean loginFormBean, int counthits) throws Exception;
+
     public int verifyUser(LoginFormBean loginFormBean) throws Exception;
     
     public List getUserCode(LoginFormBean loginFormBean) throws Exception;

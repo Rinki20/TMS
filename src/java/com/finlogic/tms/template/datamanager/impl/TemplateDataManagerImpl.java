@@ -30,6 +30,22 @@ public class TemplateDataManagerImpl implements TemplateDataManager {
 
     
     @Override
+    public int TemplateCount() throws Exception {
+        StringBuilder query = new StringBuilder();
+        query.append("SELECT COUNT(*) FROM TMS_TEMPLATE WHERE ISDEFAULT = 0;");
+
+        return sqlUtility.getIntValue(CONNECTION_ALIAS, query.toString());
+    }
+
+    @Override
+    public int DefaultCount() throws Exception {
+        StringBuilder query = new StringBuilder();
+        query.append("SELECT COUNT(*) FROM TMS_TEMPLATE WHERE ISDEFAULT = 1;");
+
+        return sqlUtility.getIntValue(CONNECTION_ALIAS, query.toString());
+    }
+
+    @Override
     public int insertTemplateDetail(TemplateEntityBean templateEntityBean) throws Exception {
         
         StringBuilder query = new StringBuilder();

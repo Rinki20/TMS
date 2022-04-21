@@ -35,7 +35,19 @@ public class TemplateController {
     @RequestMapping(params="cmdAction=loadTemplate" , method = {RequestMethod.GET ,RequestMethod.POST})
     public ModelAndView loadTemplate(HttpServletRequest request , HttpServletResponse response)
     {
-        ModelAndView modelAndView = new ModelAndView("Template/template");    
+        ModelAndView modelAndView = new ModelAndView("Template/template");
+        SessionBean sessionBean = CommonUtil.getSessionBean(request);
+        try {
+            modelAndView.addObject("USERTYPE", sessionBean.getUsertype());
+            int TemplateCount = templateService.TemplateCount();
+            CommonMember.appendLogFile("template count:- " + TemplateCount);
+            int DefaultCount = templateService.DefaultCount();
+            CommonMember.appendLogFile("Default count:- " + DefaultCount);
+            modelAndView.addObject("TemplateCount",TemplateCount);
+            modelAndView.addObject("DefaultCount",DefaultCount);
+        } catch (Exception ex) {
+            CommonMember.errorHandler(ex);
+        }
         return modelAndView;
     }
     

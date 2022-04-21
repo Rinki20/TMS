@@ -14,6 +14,8 @@ import java.util.List;
  */
 public interface TemplateDataManager {
     
+    public int TemplateCount() throws Exception;
+    public int DefaultCount() throws Exception;
     public int insertTemplateDetail(TemplateEntityBean templateEntityBean) throws Exception;
     public int updateTemplateDetail(TemplateEntityBean templateEntityBean) throws Exception;
     public int deleteTemplateDetail(TemplateEntityBean templateEntityBean) throws Exception;
