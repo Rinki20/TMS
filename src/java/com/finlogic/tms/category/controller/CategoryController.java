@@ -34,7 +34,14 @@ public class CategoryController {
     @RequestMapping(params = "cmdAction=loadCategory", method = {RequestMethod.GET, RequestMethod.POST})
     public ModelAndView loadCategory(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView modelAndView = new ModelAndView("Category/category");
-        
+        try {
+            modelAndView.addObject("USERTYPE", getUserType(request));
+            modelAndView.addObject("CategoryCount", categoryService.CategoryCount());
+            modelAndView.addObject("DefaultCount", categoryService.DefaultCount());
+        } catch (Exception ex) {
+            CommonMember.errorHandler(ex);
+        }
+
         return modelAndView;
     }
     
